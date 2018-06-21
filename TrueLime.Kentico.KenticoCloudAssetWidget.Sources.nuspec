@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>TrueLime.Kentico.KenticoCloudAssetWidget</id>
+    <version>0.9.0.0</version>
+    <title>Kentico Cloud Asset Widget</title>
+    <authors>Jeroen Furst</authors>
+    <owners>TrueLime BV</owners>
+    <licenseUrl>https://github.com/TrueLimeNL/TrueLime.Kentico.KenticoCloudAssetWidget/blob/master/LICENSE</licenseUrl>
+    <projectUrl>https://github.com/TrueLimeNL/TrueLime.Kentico.KenticoCloudAssetWidget</projectUrl>
+    <iconUrl>http://www.truelime.nl/favicon-196x196.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>
+      Widget to select and display Kentico Cloud asset. 
+    </description>
+    <releaseNotes></releaseNotes>
+    <tags>Kentico, Kentico Cloud, Asset, Widget</tags>
+    <copyright>Copyright 2018 TrueLime BV</copyright>
+	<dependencies>
+      <dependency id="KenticoCloud.ContentManagement" version="1.1.27" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="**\*.cs.pp" target="content\$version$" />
+	<file src="**\*.cshtml.pp" target="content\$version$" />
+    <file src="**\*.js" target="content\$version$" />
+  </files>
+</package>

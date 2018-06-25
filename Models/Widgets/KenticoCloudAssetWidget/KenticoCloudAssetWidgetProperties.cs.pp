@@ -5,6 +5,6 @@ namespace $rootnamespace$.Models.Widgets
 {
     public class KenticoCloudAssetWidgetProperties : IWidgetProperties
     {
-        public Guid MediaFileGuid { get; set; }
+        public Guid AssetGuid { get; set; }
     }
 }

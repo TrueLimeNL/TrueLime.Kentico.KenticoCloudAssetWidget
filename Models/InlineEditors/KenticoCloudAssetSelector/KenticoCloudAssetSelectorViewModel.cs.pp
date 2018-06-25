@@ -5,6 +5,6 @@ namespace $rootnamespace$.Models.InlineEditors
 {
     public class KenticoCloudAssetSelectorViewModel : InlineEditorViewModel
     {
-        public IEnumerable<SelectListItem> MediaFiles { get; set; }
+        public IEnumerable<SelectListItem> Assets { get; set; }
     }
 }

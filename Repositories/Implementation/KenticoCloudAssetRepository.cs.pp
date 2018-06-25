@@ -21,7 +21,7 @@ namespace $rootnamespace$.Repositories.Implementation
             mLatestVersionEnabled = latestVersionEnabled;
         }
 
-        public async Task<List<AssetModel>> GetAssets(string apiKey, string projectId)
+        public async Task<IList<AssetModel>> GetAssetsAsync(string apiKey, string projectId)
         {
             ContentManagementOptions options = new ContentManagementOptions
             {

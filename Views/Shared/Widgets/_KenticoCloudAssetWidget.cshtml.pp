@@ -5,8 +5,8 @@
 {
     Html.RenderPartial("InlineEditors/_KenticoCloudAssetSelector", new KenticoCloudAssetSelectorViewModel
     {
-        PropertyName = "mediaFileGUID",
-        MediaFiles = Model.Assets
+        PropertyName = "assetGUID",
+        Assets = Model.Assets
     });
 }
 

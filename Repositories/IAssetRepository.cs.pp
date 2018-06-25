@@ -6,6 +6,6 @@ namespace $rootnamespace$.Repositories
 {
     public interface IAssetRepository : IRepository
     {
-        Task<List<AssetModel>> GetAssets(string apiKey, string projectId);
+        Task<IList<AssetModel>> GetAssetsAsync(string apiKey, string projectId);
     }
 }

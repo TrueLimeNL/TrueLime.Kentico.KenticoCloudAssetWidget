@@ -90,7 +90,7 @@ namespace $rootnamespace$.Controllers.Widgets
         private string GetAssetUrl(AssetModel asset) 
             => (asset == null) ?
                 string.Empty :
-                $"https://assets.kenticocloud.com/{_projectId}/{asset.Id}/{asset.FileName}";
+                $"https://assets-us-01.kc-usercontent.com/{_projectId}/{asset.Id}/{asset.FileName}";
 
         /// <summary>
         /// Returns the list items for the given assets.

@@ -1,6 +1,7 @@
 ﻿(function () {
     window.kentico.pageBuilder.registerInlineEditor("kentico-cloud-asset-selector", {
-        init: function (editor, propertyName, propertyValue, localizationService) {
+        init: function (options) {
+            var editor = options.editor;
 
             var x = editor.querySelector("select");
             x.addEventListener("change", function () {
@@ -8,7 +9,7 @@
                 var event = new CustomEvent("updateProperty", {
                     detail: {
                         value: x.value,
-                        name: propertyName
+                        name: options.propertyName
                     }
                 });
                 editor.dispatchEvent(event);
@@ -16,4 +17,3 @@
         }
     });
 })();
-
